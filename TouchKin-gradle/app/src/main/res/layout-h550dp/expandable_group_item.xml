@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/expand_list_group"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <com.touchKin.touchkinapp.custom.RoundedImageView
+        android:id="@+id/parentImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_user_image" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/drawer"
+        android:layout_toRightOf="@+id/parentImageView"
+        android:text="TextView"
+        android:textColor="#464545"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/kinInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/drawer"
+        android:layout_toRightOf="@+id/parentImageView"
+        android:text="TextView"
+        android:textColor="#6c6c6c"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/drawer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/list_close" />
+
+</RelativeLayout>

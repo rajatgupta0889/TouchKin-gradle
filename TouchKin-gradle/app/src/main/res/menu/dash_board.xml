@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.touchKin.touckinapp.DashBoardActivity" >
+
+    <item
+        android:id="@+id/parentName"
+        android:icon="@drawable/ic_launcher_touchkin"
+        android:title="Mom V"
+        app:showAsAction="withText|always"/>
+  
+
+</menu>

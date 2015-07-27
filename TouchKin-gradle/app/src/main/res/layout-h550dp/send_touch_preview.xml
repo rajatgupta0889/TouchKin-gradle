@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/sendbuttonlayout"
+        android:background="#bfbfbf" />
+
+    <LinearLayout
+        android:id="@+id/sendbuttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <!--
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Send a message"
+            android:textSize="17sp" />
+        -->
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf" />
+
+        <Button
+            android:id="@+id/sendbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_message" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/parentListLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <com.touchKin.touchkinapp.custom.HorizontalListView
+            android:id="@+id/parentListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" >
+        </com.touchKin.touchkinapp.custom.HorizontalListView>
+    </RelativeLayout>
+
+    <VideoView
+        android:id="@+id/videoPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/videoPreview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/play_btn" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/videoPreview"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/triangle" />
+
+  <!--   <EditText
+        android:id="@+id/phone_number_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_above="@+id/parentListLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:background="@color/triangle"
+        android:ems="20"
+        android:gravity="top"
+        android:hint="Type your message here"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:maxHeight="120dp"
+        android:padding="10dp"
+        android:scrollbars="horizontal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/text_orange" /> -->
+
+</RelativeLayout>

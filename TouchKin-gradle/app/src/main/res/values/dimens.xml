@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default height of an action bar. -->
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <!-- Default padding of an action bar. -->
+    <dimen name="abc_action_bar_default_padding_material">0dp</dimen>
+    <!-- Default text size for action bar title. -->
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <!-- Default text size for action bar subtitle. -->
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="default_margin">12dip</dimen>
+    <dimen name="sendtouch_layoutmargin">5dp</dimen>
+
+</resources>

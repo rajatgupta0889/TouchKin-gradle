@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" >
+    </include>
+
+    <Button
+        android:id="@+id/next_detail_button"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/next_button"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/phn_number_detail"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/userAge"
+        android:background="@drawable/edit_text_holo_light"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/menubar" >
+        </RelativeLayout>
+
+        <com.touchKin.touchkinapp.custom.RoundedImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="loadImagefromGallery"
+            android:src="@drawable/accept" />
+
+        <com.touchKin.touchkinapp.custom.RoundedImageView
+            android:id="@+id/change_profile_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_holo_light"
+            android:gravity="center"
+            android:singleLine="true"
+            android:hint="Add Name"
+            android:imeOptions="actionDone"
+            android:maxLength="10"
+            
+            android:textAlignment="center"
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="22sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/mobile"
+        android:gravity="bottom" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/phn_number_detail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_age"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phn_number_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@drawable/edit_text_holo_light"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:hint="Age"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/dashboardtextcolor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userAge"
+        android:layout_marginTop="15dp"
+        android:buttonTint="@color/menubar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+           
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+           
+            android:text="Female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/otp_editText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="OTP"
+        android:inputType="phone"
+        android:textColor="@color/dashboardtextcolor"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:text="Please wait while we verify your phone"
+        android:textColor="#f89c69" />
+
+    <Button
+        android:id="@+id/enter_otp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/otp_editText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:text="Enter otp" />
+
+    <Button
+        android:id="@+id/resendOtp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/otp_editText"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:text="Resend OTP" />
+
+    <EditText
+        android:id="@+id/phn_number_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/edit_text_holo_light"
+        android:enabled="false"
+        android:gravity="center|left"
+        android:textColor="@color/dashboardtextcolor"
+        android:textColorHint="@color/dashboardtextcolor"
+        android:textSize="17sp" />
+
+</RelativeLayout>

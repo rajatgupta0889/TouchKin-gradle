@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.touchKin.touckinapp.DashBoardActivity" >
+
+    <item
+        android:id="@+id/bell"
+        android:icon="@drawable/bell"
+        android:padding="10dp"
+        android:title=""
+        app:actionLayout="@layout/action_bar_notifitcation_icon"
+        app:showAsAction="always"/>
+
+</menu>

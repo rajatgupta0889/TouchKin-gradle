@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_image_selection"
+        android:gravity="center" >
+
+        <com.touchKin.touchkinapp.custom.RoundedImageView
+            android:id="@+id/parentImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/add_user_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/parentname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Add kin" />
+
+</LinearLayout>

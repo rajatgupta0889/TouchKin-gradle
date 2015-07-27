@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Touchkin</string>
+    <string name="app_name_empty"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="my_last_touch_text">My last touch</string>
+    <string name="my_touch_duration">2 days</string>
+    <string name="ago_text">ago</string>
+    <string name="kins_last_touch_text">Kin\'s last touch</string>
+    <string name="kin_touch_duration">2 hours</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="album_name">TouchKin</string>
+    <string name="open_location_settings">Start</string>
+
+    <!--
+    <string-array name="frag_titles">
+        <item>TouchKin</item>
+        <item>Location</item>
+        <item>Activity</item>
+    </string-array>
+    -->
+    <string-array name="list_name">
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bangladesh</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Bhutan</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>China (PRC)</item>
+        <item>Costa Rica</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="country_code">
+        <item>+61</item>
+        <item>+43</item>
+        <item>+994</item>
+        <item>+880</item>
+        <item>+375</item>
+        <item>+32</item>
+        <item>+975</item>
+        <item>+55</item>
+        <item>+1</item>
+        <item>+56</item>
+        <item>+86</item>
+        <item>+506</item>
+        <item>+33</item>
+        <item>+49</item>
+        <item>+852</item>
+        <item>+36</item>
+        <item>+354</item>
+        <item>+91</item>
+    </string-array>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_video_player_manual">VideoPlayerManual</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">        You have provided too many PendingIntents to the addGeofences() call</string>
+    <string name="unknown_geofence_error">        Unknown error: the Geofence service is not available now</string>
+    <string name="geofence_transition_invalid_type">        Geofence transition error: invalid transition type %1$d</string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+    <string name="geofence_transition_notification_text">Click notification to return to app</string>
+    <string name="url">http://54.69.183.186:1340</string>
+
+</resources>

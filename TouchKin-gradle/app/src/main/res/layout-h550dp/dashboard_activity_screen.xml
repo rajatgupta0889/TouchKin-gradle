@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/parentNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mom&apos;s activity is "
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ParentLocTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=""
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="6dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/prev_dashboard_arrow" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="6dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/next_dashboard_arrow"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/centre" />
+
+            <com.touchKin.touchkinapp.custom.HoloCircularProgressBar
+                android:id="@+id/holoCircularProgressBar"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_centerInParent="true"
+                app:stroke_width="10dp" />
+
+            <ImageView
+                android:id="@+id/battery5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/battery"
+                android:layout_below="@+id/battery"
+                android:src="@drawable/battery100" />
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="65dp"
+                android:layout_toRightOf="@+id/battery"
+                android:src="@drawable/network4" />
+
+            <ImageView
+                android:id="@+id/wifi4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="65dp"
+                android:layout_toLeftOf="@+id/battery"
+                android:src="@drawable/wifi4" />
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ImageView05"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="60%"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/parentBottonActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="She has last active "
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/parentBottonActivity2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text=""
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/parentBottonActivity3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/dashboardtextcolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

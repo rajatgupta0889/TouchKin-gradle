@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kinbook_front_page" >
+
+    <TextView
+        android:id="@+id/parent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="271dp"
+        android:gravity="center"
+        android:text="MY KINBOOK"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/parent_name"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/touchkin_heart" />
+
+</RelativeLayout>

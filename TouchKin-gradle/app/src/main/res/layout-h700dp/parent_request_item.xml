@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <com.touchKin.touchkinapp.custom.RoundedImageView
+        android:id="@+id/parentImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"
+        android:src="@drawable/activity_bg" />
+
+    <Button
+        android:id="@+id/rejectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/accept_button"
+        android:layout_alignBottom="@+id/accept_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/rounded_button"
+        android:text="Reject"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/requestTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Accept"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/requestTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accept_button"
+        android:layout_alignTop="@+id/parentImage"
+        android:text="TextView" />
+
+</RelativeLayout>

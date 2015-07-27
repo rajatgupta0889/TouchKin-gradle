@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity=""
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/parentNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="Name     " />
+
+    <EditText
+        android:id="@+id/nameEditBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/parentNameTV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/parentNameTV"
+        android:background="#ffffff"
+        android:hint="Parent Name" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/parentPhoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentNameTV"
+        android:layout_marginTop="20dp"
+        android:text="Phone No." />
+
+    <TextView
+        android:id="@+id/ParentLocTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentPhoneTV"
+        android:layout_marginTop="20dp"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/locationEditBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ParentLocTV"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phoneEditBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ParentLocTV"
+        android:background="#ffffff"
+        android:hint="Parents Location" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/phoneEditBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/parentPhoneTV"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameEditBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ParentLocTV"
+        android:background="#ffffff"
+        android:hint="Parents Number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ParentLocTV"
+        android:layout_marginTop="20dp"
+        android:text="Smart Phone" />
+
+    <CheckBox
+        android:id="@+id/smartCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/locationEditBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smartCB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="ADD" />
+
+</RelativeLayout>

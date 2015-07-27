@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#55000000" >
+
+    <Button
+        android:id="@+id/customLoc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#c9e0a6"
+        android:padding="5dp"
+        android:text="Set as Home ? "
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editLoc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="custom location"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/customLoc"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/lctn1" />
+
+    <ImageView
+        android:id="@+id/customImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/customLoc"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/homeImage"
+        android:src="@drawable/lctn2" />
+
+</RelativeLayout>

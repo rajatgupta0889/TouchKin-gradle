@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_orange">#ea6927</color>
+    <color name="stausbarcolor">#db8f20</color>
+    <color name="menubar">#ffa726</color>
+    <color name="text_grey">#8b8c93</color>
+    <color name="tab_bg">#272727</color>
+    <color name="tab_selected">#ffb64c</color>
+    <color name="indicator_color">#ffceae</color>
+    <color name="daily_prog_left">#e5e4e4</color>
+    <color name="recycle_seprator">#ebebeb</color>
+    <color name="daily_prog_done">#ffa726</color>
+    <color name="outer_ring">#f2f2f2</color>
+    <color name="dashboardtextcolor">#2a210e</color>
+    <color name="commentButton">#fba778</color>
+    <color name="sendButton">#f78646</color>
+    <color name="triangle">#f5f4f4</color>
+    <color name="green">#31d95d</color>
+    <color name="button_grey">#c7c7c7</color>
+    <color name="button_orange">#ed824b</color>
+    <color name="parent_image_outer_ring">#dcdede</color>
+    <color name="child_divider">#c6c6c6</color>
+    <color name="expand_list_group">#ebebeb</color>
+
+</resources>

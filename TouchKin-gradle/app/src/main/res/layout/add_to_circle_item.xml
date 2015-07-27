@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.touchKin.touchkinapp.custom.RoundedImageView
+        android:id="@+id/parentImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_user_image" />
+
+    <Button
+        android:id="@+id/addKinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/parentImage"
+        android:background="@drawable/button_click_selector"
+        android:text="Add Kin"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/removeKinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/addKinButton"
+        android:background="@drawable/button_click_selector"
+        android:text="Remove"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/parentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/parentImage"
+        android:layout_below="@+id/parentImage"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Mom" />
+
+</RelativeLayout>

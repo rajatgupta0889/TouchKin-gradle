@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/videoView1"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white" >
+
+    <com.touchKin.touchkinapp.custom.RoundedImageView
+        android:id="@+id/parentImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/activity_bg" />
+
+    <TextView
+        android:id="@+id/commentDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/commentTimeTextView"
+        android:text="Friday" />
+
+    <TextView
+        android:id="@+id/commentTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/parentImage"
+        android:text="6:45 PM" />
+
+    <TextView
+        android:id="@+id/commentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commentTimeTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/parentImage"
+        android:text="Mom, watch Mili and shaum playing with there freinds" />
+
+</RelativeLayout>

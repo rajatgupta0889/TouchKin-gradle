@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/mobileNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/spinner_background_holo_light"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="9066665428"
+        android:inputType="phone"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/otp_editText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileNumberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/edit_text_holo_light"
+        android:gravity="center"
+        android:hint="OTP"
+        android:inputType="phone"
+        android:textSize="45dp" >
+    </EditText>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignBaseline="@+id/submitButton"
+        android:layout_alignBottom="@+id/submitButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/previous_button" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/next_button" />
+
+    <TextView
+        android:id="@+id/add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Please enter the OTP send to"
+        android:textSize="30dp" />
+
+</RelativeLayout>
